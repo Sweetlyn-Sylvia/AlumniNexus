@@ -1,0 +1,95 @@
+/* Ensure body and html cover the entire viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Extend .landing-page to fill the viewport */
+.landing-page {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  color: white;
+  min-height: 100%; /* Ensure it spans the full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out content */
+}
+
+/* Other styles remain unchanged */
+.slogan-container {
+  margin-bottom: 20px;
+}
+
+.slogan-container h1 {
+  font-size: 42px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.slogan-container p {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+
+.image-container {
+  margin: 20px 0;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-container {
+  margin: 20px auto;
+  max-width: 700px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.logo-item {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-item h2 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: white;
+}
